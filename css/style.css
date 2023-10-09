@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Lexend+Zetta:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Gruppo', sans-serif;
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+#logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+body {
+    background-color: rgb(157, 157, 157);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body main section article a {
+    display:inline-block;
+    width:200px;
+    height:210px;
+    background-color:#ccc;
+    border:1px solid #ff0000;
+}

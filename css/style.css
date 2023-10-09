@@ -6,14 +6,33 @@
     font-family: 'Lexend Zetta', sans-serif;
 }
 
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.box-logo {
+    text-align: center;
+    display: block;
+    width: 500px;
+    height: 70px;
+    background-color: #909090;
+}
+
+.box-footer {
+    text-align: center;
+    display: block;
+    width: 500px;
+    height: 70px;
+    background-color: #909090;
+}
+
 #logo {
     text-decoration: none;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 600;
     color: rgb(0, 0, 0);
-}
-body {
-    background-color: rgb(157, 157, 157);
 }
 
 header {
@@ -22,10 +41,31 @@ header {
     align-items: center;
 }
 
+.menn-dame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.populart{
+    display:inline-block;
+    width:410px;
+    height:440px;
+    background-color:#ccc;
+    border:1px solid #ffffff;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
 body main section article a {
     display:inline-block;
     width:200px;
     height:210px;
     background-color:#ccc;
-    border:1px solid #ff0000;
+    border:1px solid #ffffff;
 }
+
+

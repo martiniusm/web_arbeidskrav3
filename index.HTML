@@ -7,42 +7,47 @@
     <title>M SNEAKS</title>
 </head>
 <body>
-    <header>
-            <span>
-                <a href="index.HTML" id="logo">M SNEAKS</a>
-            </span>
-        <nav>
-            <ul>
-                <li class="meny"><a href="#">MENY</a></li>
-                <li class="meny"><a href="handlekurv.HTML">HANDLEKURV</a></li>
-                <li class="meny"><a href="#">SØK</a></li>
-                <li class="meny"><a href="#">PROFIL</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <article>
-                <a id="menn"><h2>MENN</h2></a>
-            </article>
-            <article>
-                <a id="dame"><h2>DAME</h2></a>
-            </article>
-        </section>
-        <section class="populart">
-            <a href="produktside.HTML"><h2>POPULÆRT</h2></a>
-        </section>
-    </main>
-    <footer>
-        <nav>
-            <ul>
-                <li>OM OSS</li>
-                <li>SUPPORT</li>
-                <li>I</li>
-                <li>F</li>
-                <li>X</li>
-            </ul>
-        </nav>
-    </footer>
+    <div id="grid-container">
+        <header>
+                <span>
+                    <a href="index.HTML" id="logo">M SNEAKS</a>
+                </span>
+            <nav>
+                <ul>
+                    <li class="meny"><a href="#">SØK</a></li>
+                    <li class="meny"><a href="#">MENY</a></li>
+                    <li class="meny"><a href="handlekurv.HTML">HANDLEKURV</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="menn-dame">
+                <article>
+                    <img src="img/sko-mann.png" alt="bilde av sko, mann">
+                    <a id="menn"><h2>MENN</h2></a>
+                </article>
+                <article>
+                    <img src="img/sko-dame.png" alt="bilde av sko, dame">
+                    <a id="dame"><h2>DAME</h2></a>
+                </article>
+            </section>
+            <section class="populart">
+                <img src="img/populart-sko.png" alt="bilde av sko, populart">
+                <a id="populart" href="produktside.HTML"><h2>POPULÆRT</h2></a>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li>OM OSS</li>
+                    <li>SUPPORT</li>
+                    <li>I</li>
+                    <li>F</li>
+                    <li>X</li>
+                </ul>
+            </nav>
+        </footer>
+</div>
 </body>
 </html>

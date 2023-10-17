@@ -18,7 +18,7 @@
                 <div>
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i id="ham" class="fa-solid fa-burger"></i>
-                    <i href="handlekurv.HTML" id= "cart" class="fa-solid fa-cart-shopping"></i>
+                    <i href="handlekurv.HTML" class="fa-solid fa-cart-shopping"></i>
                 </div>
                 <ul class="navbar">
                     <li class="meny"><a href="#omOss">OM OSS</a></li>
@@ -31,18 +31,17 @@
             <section class="kurv">
                 <a class="btn">HANDLEKURV</a>
             </section>
-            <section>
-                <article id="sko-kurv">
-                    <img src="img/produktside-sko.png" alt="bilde av sko, produktside">
-                    <p>INNOVATE STEP 350</p>
-                    <p>44</p>
-                    <p>KR 1999,00</p>
-                </article>
-            </section>
-            <section class="fortsett">
-                <a class="btn">FORTSETT Å HANDLE</a>
-            </section>
-            <section class="kasse">
+                <section>
+                    <article id="sko-kurv">
+                        <img src="img/produktside-sko.png" alt="bilde av sko, produktside">
+                        <!--https://www.craiyon.com/-->
+                        <p>INNOVATE STEP 350</p>
+                        <p>STR 44</p>
+                        <p>KR 1999,00</p>
+                    </article>
+                </section>
+            <section class="fortsett-kasse">
+                <a href="produktside.HTML" class="btn">FORTSETT Å HANDLE</a>
                 <a class="btn">GÅ TIL KASSEN</a>
             </section>
         </main>
@@ -74,16 +73,6 @@
         let x = document.querySelector(".navbar")
 
         document.getElementById("ham").addEventListener("click", (e) =>{
-            if(x.className === "navbar") {
-                x.className += " responsive";
-            } else{
-                x.className = "navbar"
-            }
-        })
-
-        let y = document.querySelector(".navbar")
-
-        document.getElementById("cart").addEventListener("click", (e) =>{
             if(x.className === "navbar") {
                 x.className += " responsive";
             } else{

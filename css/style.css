@@ -29,6 +29,7 @@ main {
 
 footer {
     grid-area: footer;
+    padding: 1rem;
 }
 /* CSS for forside*/
 #logo {
@@ -179,6 +180,42 @@ header nav div {
 .produktside article p {
     flex-basis: 100%;
     text-align: center;
+}
+
+/* CSS handlekurv*/
+
+.kurv {
+    text-align: center;
+    padding: 1rem;
+}
+
+#sko-kurv img {
+    width: 60%;
+    height: 60%;
+}
+
+#sko-kurv p {
+    display: flex;
+    text-align: right;
+    display: flex;
+}
+
+.fortsett {
+    width: 200px;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline;
+    display: flex;
+    justify-content: center;
+}
+
+.kasse {
+    width: 200px;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline;
+    display: flex;
+   justify-content: center;
 }
 
 @media only screen and (min-width:700px) {

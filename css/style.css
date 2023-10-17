@@ -30,7 +30,7 @@ main {
 footer {
     grid-area: footer;
 }
-
+/* CSS for forside*/
 #logo {
     text-decoration: none;
     font-size: 24px;
@@ -41,12 +41,14 @@ footer {
 header {
     font-size: 1.5rem;
     font-weight: 500;
+    margin: 1rem 0;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
     position: relative;
+    padding: 1rem;
 }
 
 header nav div {
@@ -62,19 +64,20 @@ header nav div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    justify-content: center;
 }
 
 .menn-dame h2 {
     flex-basis: 100%;
+    text-align: center;
 }
 
 .menn-dame article {
     flex-basis: 35%;
-    min-width: 300px;
 }
 
-.menn-dame article img {
-    width: 100%;
+.menn-dame img {
+    margin: 1rem;
 }
 
 .meny a {
@@ -88,21 +91,30 @@ header nav div {
 }
 
 .populart{
-    display:inline-block;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    justify-content: center;
+}
+
+.populart h2 {
+    flex-basis: 100%;
+    text-align: center;
 }
 
 .populart a {
     text-decoration: none;
 }
 
+.populart article img {
+    width: 100%;
+}
+
 .responsive {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: rgb(156, 156, 156);
+    background-color: #ffebe4;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -136,38 +148,71 @@ header nav div {
     min-width: 200px;
 }
 
-@media only screen and (min-width:800px) {
+/* CSS produktside*/
+
+.btn {
+    justify-content: center;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #d8c0c0;
+    padding: 1rem 0;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.pop {
+    text-align: center;
+}
+
+.produktside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.produktside img {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.produktside article p {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+@media only screen and (min-width:700px) {
     #grid-container {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "header header header" "main" "footer footer footer";
+    }
+    
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
     }
 
-    header {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
+    #ham, .fa-magnifying-glass, .fa-cart-shopping {
+        display: none;
     }
-    
-    main {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
+
+    .menn-dame {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    
-    aside {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
+
+    .menn-dame img {
+        width: 100% ;
+        width: 100%;
     }
-    
-    footer {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 4;
+
+    .menn-dame article {
+        padding: 1rem;
+        width: 40%;
+        align-self: center;
     }
 }
 

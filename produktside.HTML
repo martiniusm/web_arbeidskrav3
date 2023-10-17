@@ -3,9 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POPULÆRT</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>M SNEAKS</title>
 </head>
 <body>
-    
+    <div id="grid-container">
+        <header>
+            <nav>    
+                <a href="index.HTML" id="logo">M SNEAKS</a>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i id="ham" class="fa-solid fa-burger"></i>
+                    <i href="handlekurv.HTML" id= "cart" class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <ul class="navbar">
+                    <li class="meny"><a href="#omOss">OM OSS</a></li>
+                    <li class="meny"><a href="index.HTML">HJEM</a></li>
+                    <li class="meny"><a href="handlekurv.HTML">HANDLEKURV</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="pop">
+                <a href="produktside.HTML" class="btn">POPULÆRT</a>
+            </section>
+            <section class="produktside">
+                <article>
+                    <img src="img/produktside-sko.png" alt="bilde av sko, produktside">
+                    <p>sneaks</p>
+                </article>
+                <article>
+                    <img src="img/produktside-sko.png" alt="bilde av sko, produktside">
+                    <p>sneaks</p>
+                </article>
+                <article>
+                    <img src="img/produktside-sko.png" alt="bilde av sko, produktside">
+                    <p>sneaks</p>
+                </article>
+                <article>
+                    <img src="img/produktside-sko.png" alt="bilde av sko, produktside">
+                    <p>sneaks</p>
+                </article>
+                <article>
+                    <img src="img/produktside-sko.png" alt="bilde av sko, produktside">
+                    <p>sneaks</p>
+                </article>
+                <article>
+                    <img src="img/produktside-sko.png" alt="bilde av sko, produktside">
+                    <p>sneaks</p>
+                </article>
+                <article>
+                    <img src="img/produktside-sko.png" alt="bilde av sko, produktside">
+                    <p>sneaks</p>
+                </article>
+                <article>
+                    <img src="img/produktside-sko.png" alt="bilde av sko, produktside">
+                    <p>sneaks</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <section id="omOss">
+                    <h2>OM OSS</h2>
+                    <article>
+                        <h3>Lidenskap for sko</h3>
+                        <p>Vi brenner for sneakers, og lever for å gi folk et trygt sted å kjøpe sitt nyeste par med sneaks</p>
+                    </article>
+                    <li>
+                        <h4>Vår Instagram</h4>
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </li>
+                    <li>
+                        <h4>Vår Facebook</h4>
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
+                    </li>
+                    <li>
+                        <h4>Vår X</h4>
+                        <i class="fa-brands fa-x-twitter fa-2xl"></i>
+                    </li>
+                </section>    
+            </nav>
+        </footer>
+    </div>
+    <script>
+        let x = document.querySelector(".navbar")
+
+        document.getElementById("ham").addEventListener("click", (e) =>{
+            if(x.className === "navbar") {
+                x.className += " responsive";
+            } else{
+                x.className = "navbar"
+            }
+        })
+
+        let y = document.querySelector(".navbar")
+
+        document.getElementById("cart").addEventListener("click", (e) =>{
+            if(x.className === "navbar") {
+                x.className += " responsive";
+            } else{
+                x.className = "navbar"
+            }
+        })
+        //Kode for hamburger meny fått av Ann-Charlott Beatrice Karlsen i forelesning 16.10.2023
+    </script>
 </body>
 </html>

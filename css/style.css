@@ -16,7 +16,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "nav" "main" "footer";
+    grid-template-areas: "header" "main" "footer";
 }
 
 header, main, footer {
